@@ -30,8 +30,6 @@
 
 ##### 进程参数
 
-###### 函数介绍
-
 1、进程及进程间关系
 
 【1】os.getpid() ： Return the current process id.
@@ -43,6 +41,22 @@
 【4】os.getpgid(pid) ： Return the process group id of the process with process id pid. 
 
 ![进程与进程间关系](进程与进程间关系.png)
+
+2、进程属主属组
+
+【1】os.getlogin() ： Return the name of the user logged in on the controlling terminal of the process.
+
+【2】os.getuid() ： Return the current process’s real user id.
+
+【3】os.getgid() ：Return the real group id of the current process.
+
+【4】os.geteuid() ： Return the current process’s effective user id.
+
+【5】os.getegid() ： Return the effective group id of the current process. 
+
+【6】os.getgroups() ： Return list of supplemental group ids associated with the current process.
+
+![进程属主属组](进程属主属组.png)
 
 ##### 进程管理
 
