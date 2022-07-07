@@ -42,7 +42,7 @@
 
 【4】os.getpgid(pid) ： Return the process group id of the process with process id pid. 
 
-![image-20220707215946600](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220707215946600.png)
+![进程与进程间关系](进程与进程间关系.png)
 
 ##### 进程管理
 
