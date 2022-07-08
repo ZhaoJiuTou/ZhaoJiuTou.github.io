@@ -8,6 +8,8 @@
 
 ## 语法
 
+
+
 ## 实例
 
 ###### 提示：
@@ -22,11 +24,15 @@
 
 sudo bpftrace -e 'tracepoint:raw_syscalls:sys_enter { @[comm] = count();}'  
 
-根据进程名称分别统计时段内发生的系统调用次数。
+根据进程名称分别统计执行时段内发生的系统调用次数。
 
 ![实例001](实例001.png)
 
 sudo bpftrace -e 'tracepoint:raw_syscalls:sys_enter { @[pid, comm] = count(); }'
+
+根据进程名称及Pid分别统计执行时段内发生的系统调用次数。
+
+![实例002](实例002.png)
 
 sudo bpftrace -e 'tracepoint:syscalls:sys_enter_execve{ join(args->argv);}'
 

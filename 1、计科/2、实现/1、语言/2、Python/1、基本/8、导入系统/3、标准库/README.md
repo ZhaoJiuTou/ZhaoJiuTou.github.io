@@ -72,6 +72,10 @@
 
 ##### 进程管理
 
+【1】os.fork() : Fork a child process, using a new pseudo-terminal as the child’s controlling terminal. 
+
+![进程创建_fork](进程创建_fork.png)
+
 ##### 调度器接口
 
 ##### 文件名，命令行参数，以及环境变量
