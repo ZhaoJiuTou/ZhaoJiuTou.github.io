@@ -58,6 +58,20 @@
 
 ![进程属主属组](进程属主属组.png)
 
+3、进程环境信息
+
+【1】os.environ ：A mapping object where keys and values are strings that represent the process environment.
+
+【2】os.uname() ： Returns information identifying the current operating system. 
+
+【3】os.ctermid() ： Return the filename corresponding to the controlling terminal of the process.
+
+【4】os.getenv(key, default=None) ： Return the value of the environment variable key if it exists, or default if it doesn’t.  
+
+​                                                                    key, default and the result are str. 
+
+![进程环境信息png](进程环境信息png.png)
+
 ##### 进程管理
 
 ##### 调度器接口
