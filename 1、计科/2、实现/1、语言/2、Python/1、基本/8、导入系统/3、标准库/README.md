@@ -72,7 +72,7 @@
 
 ##### 进程管理
 
-【1】os.fork() : Fork a child process, using a new pseudo-terminal as the child’s controlling terminal. 
+【1】os.fork() : Fork a child process. Return `0` in the child and the child’s process id in the parent. 
 
 ![进程创建_fork](进程创建_fork.png)
 
