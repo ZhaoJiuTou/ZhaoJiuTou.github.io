@@ -96,15 +96,49 @@ Elastic Stack 由一系列产品组件构成，能够对数据进行采集、搜
 
 【2】Jdk 安装 
 
-`tar -zxvf jdk-8u333-linux-x64.tar.gz  &&  `
+`tar -xf ./jdk-8u333-linux-x64.tar.gz && mv jdk1.8.0_333/ /usr/local/jdk`
+
+```
+sed -i '$a\export JAVA_HOME=/usr/local/jdk/  \
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar  \
+export PATH=$JAVA_HOME/bin:$PATH' /etc/profile
+```
+
+`source /etc/profile`
+
+`java -version`
+
+![步骤二](步骤二.png)
 
 【3】修改内核参数
 
+`sysctl -w vm.max_map_count=262144 && sysctl -p && sysctl vm.max_map_count`
+
+`sed -i   '$a\vm.max_map_count=262144' /etc/sysctl.conf`
+
+因为会重启启动，所以可以不执行第一条临时修改方案，只进行第二条，第二条重启后才会生效。
+
+![步骤三](步骤三.png)
+
 【4】创建用户
+
+`useradd es`
+
+`passwd es`
+
+![步骤五](步骤五.png)
 
 【5】修改用户限制
 
+`sed -i '$a\* soft nofile 655350' /etc/security/limits.conf`
+
+`sed -i '$a\* hard nofile 655350' /etc/security/limits.conf`
+
+![步骤六](步骤六.png)
+
 【6】进行重新启动
+
+`reboot`
 
 2、ElsatciSearch 进行安装配置
 
