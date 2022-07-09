@@ -34,8 +34,6 @@ Elastic Stack 由一系列产品组件构成，能够对数据进行采集、搜
 
 3、The Elastic Stack is the ELK Stack, but with more flexibility to do great things.
 
-<!--信息来源：https://www.elastic.co/what-is/elk-stack-->
-
 ###### Elastic Stack的基本组成与各自功能
 
 1、Elasticsearch： Elasticsearch is a search and analytics engine.
@@ -68,8 +66,46 @@ Elastic Stack 由一系列产品组件构成，能够对数据进行采集、搜
 
 1、Elastic Stack版本：8.2.2
 
-2、部署环境 ：CentOS 7
+2、OS发行版本 ：CentOS 7
 
-3、
+3、机器环境：
+
+【1】台数：三台
+
+【2】配置：4G1核
+
+【3】IP：192.168.1.101 192.168.1.102 192.168.1.103
 
 ###### ElasticSeach
+
+1、ElasticSearch 安装前置步骤（此步骤三台均做且相同）
+
+【1】进行安全配置
+
+`iptables -F`
+
+`systemctl stop firewalld`
+
+`systemctl disable firewalld`
+
+`sed -i "s\SELINUX=enforcing\SELINUX=disabled\g" /etc/selinux/config`
+
+`setenforce 0`
+
+![步骤一](步骤一.png)
+
+【2】Jdk 安装 
+
+`tar -zxvf jdk-8u333-linux-x64.tar.gz  &&  `
+
+【3】修改内核参数
+
+【4】创建用户
+
+【5】修改用户限制
+
+【6】进行重新启动
+
+2、ElsatciSearch 进行安装配置
+
+3、ElasticSearch  前端工具安装
