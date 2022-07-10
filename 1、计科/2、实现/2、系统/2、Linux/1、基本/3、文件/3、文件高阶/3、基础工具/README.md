@@ -1,10 +1,12 @@
 # 基础工具
 
+
+
 ## 前述
 
-1、本篇会对文件管理中功能性、综合性、使用率更强更高的工具进行讲解。
+1、本篇仅对文件管理中功能性、综合性、使用率更强更高的工具进行讲解。
 
-2、本篇内容仅限于清晰明确理解格式及语法，命令选项满足于一般的工作需要。对工具的功能性全面了解还请阅读官方手册或者man日志。
+2、本篇内容仅限于清晰明确理解格式及语法，命令选项满足于一般的工作需要。详情可阅读官方手册。
 
 3、本文不对涉及到的正则表达式进行讲解，有时间单独开篇。
 
@@ -18,7 +20,7 @@
 
 1、简述：prints lines that contain a match for one or more patterns.
 
-2、官方地址：[][]https://www.gnu.org/software/grep/manual/grep.html
+2、官方地址：https://www.gnu.org/software/grep/manual/grep.html
 
 3、基本格式：grep [option...] [patterns] [file...]
 
@@ -50,7 +52,7 @@
 
 1、简述：Sed is a stream editor. 
 
-2、官方手册：[][]https://www.gnu.org/software/sed/manual/sed.html
+2、官方手册：https://www.gnu.org/software/sed/manual/sed.html
 
 3、基本格式：sed OPTIONS... [SCRIPT] [INPUTFILE...]
 
