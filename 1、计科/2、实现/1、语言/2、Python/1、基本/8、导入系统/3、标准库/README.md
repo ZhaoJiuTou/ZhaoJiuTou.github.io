@@ -72,9 +72,36 @@
 
 ##### 进程管理
 
-【1】os.fork() : Fork a child process. Return 0 in the child and the child’s process id in the parent. 
+1、os.fork() : Fork a child process. Return 0 in the child and the child’s process id in the parent. 
 
 ![进程创建_fork](进程创建_fork.png)
+
+2、spawn* ：Execute the program *path* in a new process.
+
+【1】函数列表
+
+- os.spawnl(mode, path, ...)
+- os.spawnle(mode, path, ..., env)
+- os.spawnlp(mode, file, ...)
+- os.spawnlpe(mode, file, ..., env)
+- os.spawnv(mode, path, args)
+- os.spawnve(mode, path, args, env)
+- os.spawnvp(mode, file, args)
+- os.spawnvpe(mode, file, args, env)
+
+【2】名称后缀解释
+
+- spawn* 函数的 "l" 和 "v" 变体不同在于命令行参数的传递方式。
+- 结尾包含第二个 "p" 的变体将使用 PATH 环境变量来查找程序 file。
+- 对于以e结尾的函数，env 参数是一个映射，用于定义新进程的环境变量（代替当前进程的环境变量）。
+
+【3】mode 参数的可取值
+
+- os.P_NOWAIT
+- os.P_NOWAITO
+- os.P_WAIT
+
+![spawn_](spawn_.png)
 
 ##### 调度器接口
 
