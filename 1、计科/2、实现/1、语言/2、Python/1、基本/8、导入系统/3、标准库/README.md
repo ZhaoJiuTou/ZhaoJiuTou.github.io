@@ -120,6 +120,26 @@
 
 ![exec_](exec_.png)
 
+###### 进程回收
+
+1、os.wait() ： Wait for completion of a child process, and return a tuple containing its pid and exit status indication
+
+2、os.waitpid(pid, options)  ： Wait for completion of a child process given by process id *pid*, and return a tuple containing its process id and exit status indication 
+
+3、os.wait3(options) ： Similar to waitpid(), except no process id argument is given and a 3-element tuple containing the child’s process id, exit status indication, and resource usage information is returned. 
+
+4、os.wait4(pid, options) ： Similar to waitpid(), except a 3-element tuple, containing the child’s process id, exit status indication, and resource usage information is returned. 
+
+![wait](wait.png)
+
+###### 进程退出
+
+1、os._exit(n) ： Exit the process with status *n*, without calling cleanup handlers, flushing stdio buffers, etc.
+
+注：sys.exit(n)讲Python运行时服务时再讲解
+
+![进程退出](进程退出.png)
+
 ##### 调度器接口
 
 ##### 文件名，命令行参数，以及环境变量
