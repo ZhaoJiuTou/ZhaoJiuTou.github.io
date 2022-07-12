@@ -72,6 +72,8 @@
 
 ##### 进程管理
 
+###### 进程创建
+
 1、os.fork() : Fork a child process. Return 0 in the child and the child’s process id in the parent. 
 
 ![进程创建_fork](进程创建_fork.png)
@@ -102,6 +104,21 @@
 - os.P_WAIT
 
 ![spawn_](spawn_.png)
+
+3、exec* ： These functions all execute a new program, replacing the current process;
+
+【1】函数列表
+
+- os.execl(path, arg0, arg1, ...)
+- os.execle(path, arg0, arg1, ..., env)
+- os.execlp(file, arg0, arg1, ...)
+- os.execlpe(file, arg0, arg1, ..., env)
+- os.execv(path, args)
+- os.execve(path, args, env)
+- os.execvp(file, args)
+- os.execvpe(file, args, env)
+
+![exec_](exec_.png)
 
 ##### 调度器接口
 
