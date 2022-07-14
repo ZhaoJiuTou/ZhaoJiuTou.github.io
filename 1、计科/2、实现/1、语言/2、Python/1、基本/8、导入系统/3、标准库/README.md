@@ -162,7 +162,9 @@
 
 ###### 进程优先级
 
+1、os.nice(increment)
 
+![nice](nice.png)
 
 
 
