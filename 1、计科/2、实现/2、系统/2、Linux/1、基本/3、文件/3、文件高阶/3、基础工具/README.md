@@ -113,6 +113,8 @@
 
 - flags ： g
 
+`sed -i '$s/^/s/'  ./file`
+
 【9】{ cmd ; cmd ... } ： Group several commands together.
 
 ##### Gawk（awk）

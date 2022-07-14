@@ -140,6 +140,42 @@
 
 ![进程退出](进程退出.png)
 
+###### 进程信号
+
+1、os.abort() ： Generate a SIGABRT signal to the current process. 
+
+2、os.kill(pid, sig) ： Send signal sig to the process pid. 
+
+3、os.killpg(pgid, sig) ： Send the signal sig to the process group pgid.
+
+![001](001.png)
+
+![002](002.png)
+
+![003](003.png)
+
+![004](004.png)
+
+![005](005.png)
+
+![006](006.png)
+
+###### 进程优先级
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##### 调度器接口
 
 ##### 文件名，命令行参数，以及环境变量
