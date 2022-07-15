@@ -176,6 +176,30 @@ os.popen(cmd, mode='r', buffering=- 1) ： Open a pipe to or from command cmd.
 
 ![进程其他](进程其他.png)
 
+###### 文件描述符
+
+1、os.fdopen(fd, *args, **kwargs) ： Return an open file object connected to the file descriptor fd.
+
+2、os.open(path, flags, mode=0o777, *, dir_fd=None) ： Open the file path and set various flags according to flags and possibly its mode according to mode. 
+
+3、os.close(fd) ： Read at most n bytes from file descriptor fd.
+
+4、os.read(fd, n) ： Read at most n bytes from file descriptor fd.
+
+5、os.write(fd, str) ： Write the bytestring in str to file descriptor fd.
+
+6、os.fsync(fd) ： Force write of file with filedescriptor fd to disk. 
+
+7、os.fstatvfs(fd) ： Return information about the filesystem containing the file associated with file descriptor fd, like statvfs(). 
+
+8、os.fstat(fd) ： Get the status of the file descriptor *fd*. Return a stat_result object.
+
+9、os.pipe() ： Create a pipe. Return a pair of file descriptors (r, w) usable for reading and writing, respectively. 
+
+![文件描述符](文件描述符.png)
+
+![pipe](pipe.png)
+
 #### time
 
 1、time.time() ： Return the time in seconds since the epoch as a floating point number.
