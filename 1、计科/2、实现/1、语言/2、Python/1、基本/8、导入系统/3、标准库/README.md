@@ -176,15 +176,49 @@ os.popen(cmd, mode='r', buffering=- 1) ： Open a pipe to or from command cmd.
 
 ![进程其他](进程其他.png)
 
+#### time
 
+1、time.time() ： Return the time in seconds since the epoch as a floating point number.
 
+2、time.ctime([secs]) ： Convert a time expressed in seconds since the epoch to a string of a form
 
+3、time.gmtime([secs]) ： Convert a time expressed in seconds since the epoch to a struct_time in UTC in which the dst flag is always zero. 
 
+4、time.localtime([secs]) ： Suspend execution of the calling thread for the given number of seconds. 
 
+5、time.sleep(secs) ： Suspend execution of the calling thread for the given number of seconds. 
 
+6、time.process_time() ： Return the value (in fractional seconds) of the sum of the system and user CPU time of the current process. 
 
+7、time.thread_time()  ： Return the value (in fractional seconds) of the sum of the system and user CPU time of the current thread. 
 
+![time](time.png)
 
+#### platform
+
+01、platform.architecture(executable=sys.executable, bits='', linkage='')  ： Queries the given executable (defaults to the Python interpreter binary) for various architecture information.
+
+02、platform.machine() ： Returns the machine type
+
+03、platform.node() ： Returns the computer’s network name (may not be fully qualified!).
+
+04、platform.platform(aliased=0, terse=0) ： Returns a single string identifying the underlying platform with as much useful information as possible.
+
+05、platform.processor() ： Returns the (real) processor name
+
+06、platform.python_build() ： Returns a tuple (buildno, builddate) stating the Python build number and date as strings.
+
+07、platform.release() ： Returns the system’s release
+
+08、platform.system() ： Returns the system/OS name
+
+09、platform.version() ： Returns the system’s release version
+
+10、platform.uname() ： Fairly portable uname interface. 
+
+11、platform.freedesktop_os_release() ： Get operating system identification from os-release file and return it as a dict. 
+
+![platform](platform.png)
 
 
 
