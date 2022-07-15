@@ -166,6 +166,16 @@
 
 ![nice](nice.png)
 
+##### 进程其他
+
+os.times() ： Returns the current global process times. The return value is an object with five attributes.
+
+os.system(command) ： Execute the command (a string) in a subshell.
+
+os.popen(cmd, mode='r', buffering=- 1) ： Open a pipe to or from command cmd. 
+
+![进程其他](进程其他.png)
+
 
 
 
