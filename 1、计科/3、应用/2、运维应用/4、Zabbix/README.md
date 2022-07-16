@@ -30,7 +30,7 @@
 
 【07】zcat /usr/share/doc/zabbix-server-mysql*/create.sql.gz | mysql -uzabbix -p zabbix
 
-【08】sed -i '124{s/DBPassword=/DBPassword=123456/;s/# //'  /etc/zabbix/zabbix_server.conf >> result 2>&1
+【08】sed -i '124{s/DBPassword=/DBPassword=123456/;s/# //}'  /etc/zabbix/zabbix_server.conf >> result 2>&1
 
 【09】sed  -i '2,3{s/#//;s/example.com/192.168.1.136/}'   /etc/opt/rh/rh-nginx116/nginx/conf.d/zabbix.conf  >>result 2>&1
 
