@@ -48,7 +48,7 @@
 
 3、访问Zabbix，并进行相应配置，因太过简单不再讲述。
 
-【1】访问网址：http://<server_ip |  name>
+【1】访问网址：http://server_ip
 
 【2】默认账户：用户名：Admin 密码：zabbix
 
