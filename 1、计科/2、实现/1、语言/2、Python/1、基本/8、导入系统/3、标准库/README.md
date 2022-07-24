@@ -200,6 +200,24 @@ os.popen(cmd, mode='r', buffering=- 1) ： Open a pipe to or from command cmd.
 
 ![pipe](pipe.png)
 
+###### 文件和目录
+
+1、os.stat(path, *, dir_fd=None, follow_symlinks=True)：Get the status of a file or a file descriptor. Perform the equivalent of a stat() system call on the given path. 
+
+2、os.lstat(path, *, dir_fd=None)：Perform the equivalent of an lstat() system call on the given path. Similar to stat(), but does not follow symbolic links. 
+
+3、os.listdir(path='.')：Return a list containing the names of the entries in the directory given by path. 
+
+4、os.pathconf(path, name)：Return system configuration information relevant to a named file. 
+
+5、os.getcwd()：Return a string representing the current working directory.
+
+6、os.chdir(path)：Change the current working directory to path.
+
+7、os.sync()：Force write of everything to disk.
+
+![文件](文件.png)
+
 #### time
 
 1、time.time() ： Return the time in seconds since the epoch as a floating point number.

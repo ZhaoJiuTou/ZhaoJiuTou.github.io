@@ -1,3 +1,3 @@
 # Introduction
 
-内容在集群下Nginx部分
+内容放在集群nginx下
