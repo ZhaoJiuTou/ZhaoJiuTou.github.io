@@ -238,7 +238,7 @@ Metadata operations performed by DDL statements
 
  The system tablespace is the storage area for the InnoDB data dictionary, the doublewrite buffer, the change buffer, and undo logs. It may also contain table and index data if tables are created in the system tablespace rather than file-per-table tablespaces.
 
-  The system tablespace can have one or more data files. By default, a single system tablespace data file, named ibdata1, is created in the data directory. 
+ The system tablespace can have one or more data files. By default, a single system tablespace data file, named ibdata1, is created in the data directory. 
 
   <2>  独立表空间（File-Per-Table Tablespace）：
 
@@ -250,9 +250,9 @@ Metadata operations performed by DDL statements
 
   <1> innodb_data_file_path：
 
-- The size and number of system tablespace data files is defined by the innodb_data_file_path startup option.
+  The size and number of system tablespace data files is defined by the innodb_data_file_path startup option.
 
-- 配置后需要重启
+  配置后需要重启
 
   <2> innodb_file_per_table：是否开启独立表空间。
 
@@ -272,8 +272,9 @@ Metadata operations performed by DDL statements
 
   <1> innodb_log_group_home_dir：
 
-- innodb_log_group_home_dir defines directory path to the InnoDB log files.
--  If this option is not configured, InnoDB log files are created in the MySQL data directory (datadir).
+-   innodb_log_group_home_dir defines directory path to the InnoDB log files.
+
+-   If this option is not configured, InnoDB log files are created in the MySQL data directory (datadir).
 
   <2> innodb_log_file_size：每个重做日志文件的大小
 
@@ -281,7 +282,11 @@ Metadata operations performed by DDL statements
 
 ![](redo.png)
 
+补充：
+
+b.opt：建库过程中自动生成的，用来记录该库的默认字符集编码和字符集排序规则。如果删除将采用设character_set_server设置
 
 
-[^]: b.opt：建库过程中自动生成的，用来记录该库的默认字符集编码和字符集排序规则。如果删除将采用设character_set_server设置
+
+
 
