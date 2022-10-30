@@ -174,8 +174,114 @@ Metadata operations performed by DDL statements
 
 3、PID文件
 
+（1）概述：当MySQL实例启动时，会将自己的PID写入到一个文件中，这个文件就是PID文件
+
+（2）变量：
+
+【1】pid_file：pid文件所在位置
+
+![](pid_file.png)
+
 4、套接字文件
+
+（1）概述：
+
+【1】Linux系统下本地连接MySQL使用（可以）域套接字的方式。譬如mysql客户端工具不加-h链接。
+
+【2】域套接字不走网络协议栈，速度更快，效率更高。
+
+（2）变量：
+
+【1】socket：域套接字文件所在位置
+
+![](域套接字文件1.png)
+
+![](域套接字文件2.png)
 
 5、表结构定义文件
 
-6、存储引擎相关文件
+（1）概述：
+
+【1】因为MySQL插件式存储引擎的体系结构的关系，MySQL数据的存储是根据表进行的，每个表都会有阈值对应的文件。
+
+【2】不论表使用哪种存储引擎，都会有表结构定义文件（frm）记录该表的表结构定义。
+
+【3】该文件记录了该表的表结构定义。
+
+【4】视图文件，依旧使用表结构定义文件存储（定义）。
+
+【5】表结构文件后缀名为：.frm。
+
+【6】视图表结构文件为文本文件，可以直接cat查看。
+
+![](视图.png)
+
+6、存储引擎相关文件（仅限InnoDB）
+
+（1）表空间文件
+
+【1】概述：仅做概括性介绍，后续详情在存储引擎部分会再详讲。
+
+<1>表空间：InnoDB存储引擎逻辑结构的最高层，所有的数据都是存放在表空间中。一般分为系统表空间和独立表空间。
+
+<2>版本相关：5.6版本以后默认会开启使用独立表空间。
+
+<3>文件名称：
+
+- 默认的系统表空间文件名称为：ibdata1。
+
+- 默认的独立表空间名称为：表名.ibd
+
+【2】类型：
+
+  <1> 系统表空间（System Tablespace）：
+
+ The system tablespace is the storage area for the InnoDB data dictionary, the doublewrite buffer, the change buffer, and undo logs. It may also contain table and index data if tables are created in the system tablespace rather than file-per-table tablespaces.
+
+  The system tablespace can have one or more data files. By default, a single system tablespace data file, named ibdata1, is created in the data directory. 
+
+  <2>  独立表空间（File-Per-Table Tablespace）：
+
+  A file-per-table tablespace contains data and indexes for a single InnoDB table, and is stored on the file system in a single data file.
+
+  InnoDB creates tables in file-per-table tablespaces by default. This behavior is controlled by the innodb_file_per_table variable. Disabling innodb_file_per_table causes InnoDB to create tables in the system tablespace.
+
+【3】变量：
+
+  <1> innodb_data_file_path：
+
+- The size and number of system tablespace data files is defined by the innodb_data_file_path startup option.
+
+- 配置后需要重启
+
+  <2> innodb_file_per_table：是否开启独立表空间。
+
+![](tablespace.png)
+
+（2）重做日志文件：
+
+【1】概述
+
+  <1> The redo log is a disk-based data structure used during crash recovery to correct data written by incomplete transactions. 
+
+  <2> By default, the redo log is physically represented on disk by two files named ib_logfile0 and ib_logfile1.
+
+  <3> MySQL writes to the redo log files in a circular fashion. 
+
+【2】变量
+
+  <1> innodb_log_group_home_dir：
+
+- innodb_log_group_home_dir defines directory path to the InnoDB log files.
+-  If this option is not configured, InnoDB log files are created in the MySQL data directory (datadir).
+
+  <2> innodb_log_file_size：每个重做日志文件的大小
+
+  <3> innodb_log_files_in_group：日志文件组中重做日志文件的数量
+
+![](redo.png)
+
+
+
+[^]: b.opt：建库过程中自动生成的，用来记录该库的默认字符集编码和字符集排序规则。如果删除将采用设character_set_server设置
+
