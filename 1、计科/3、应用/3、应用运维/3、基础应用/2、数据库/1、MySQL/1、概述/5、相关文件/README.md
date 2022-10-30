@@ -272,9 +272,9 @@ Metadata operations performed by DDL statements
 
   <1> innodb_log_group_home_dir：
 
--   innodb_log_group_home_dir defines directory path to the InnoDB log files.
+  innodb_log_group_home_dir defines directory path to the InnoDB log files.
 
--   If this option is not configured, InnoDB log files are created in the MySQL data directory (datadir).
+  If this option is not configured, InnoDB log files are created in the MySQL data directory (datadir).
 
   <2> innodb_log_file_size：每个重做日志文件的大小
 
