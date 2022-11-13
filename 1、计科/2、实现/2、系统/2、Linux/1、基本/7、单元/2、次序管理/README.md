@@ -210,15 +210,37 @@ used for the channel.
 
   ​                Like  the  lan interface, the lanplus interface communicates with the BMC over an Ethernet LAN connection using UDP under IPv4.
 
-【2】 -H hostname    Remote host name for LAN interface
+【2】-H hostname： Remote host name for LAN interface
 
 当我们的-I选择了lan或lanplus接口类型后，需要使用此选项指定远程的主机名，也可以使用IP地址。
 
+【3】-p port： Remote RMCP port [default=623]
 
+【4】-U username：Remote session username
 
+【5】-P password： Remote session password
 
+【6】-f file： Read remote session password from file
 
-Command
+（3）Command：
+
+【1】sel： Print System Event Log (SEL)
+
+【2】fru： Print built-in FRU and scan SDR for FRU locators
+
+【3】 sdr：Print Sensor Data Repository entries and readings
+
+【4】sensor： Print detailed sensor information
+
+【5】power：Shortcut to chassis power commands
+
+【6】 mc： Management Controller status and global enables
+
+【7】lan： Configure LAN Channels
+
+【8】user：Configure Management Controller users
+
+【9】 sol： Configure and connect IPMIv2.0 Serial-over-LAN
 
 3、ipmiutil：
 
