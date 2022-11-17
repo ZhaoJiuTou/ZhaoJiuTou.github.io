@@ -32,7 +32,7 @@
 
 【2】通用命令
 
-【3】时间格式
+【3】事件格式
 
 【4】数据记录
 
@@ -128,25 +128,19 @@ Local software running on the managed system and using the System Interface to t
 
 【1】Channel Numbers：
 
-​		Each interface has a *channel number* that is used when configuring the channel and for routing messages between 
-
-channels. 
+​		Each interface has a *channel number* that is used when configuring the channel and for routing messages between channels. 
 
 ![](IPMI通道编号.png)
 
 【2】Channel Protocol Type：
 
-​		The protocol used for transferring IPMI messages on a given channel is identified using a channel protocol type 
-
-number（5-bits）. 
+​		The protocol used for transferring IPMI messages on a given channel is identified using a channel protocol type number（5-bits）. 
 
 ![](IPMI通道协议.png)
 
 【3】Channel Medium Type：
 
-​		The Channel Medium Type number is a seven-bit value that identifies the general class of medium that is being 
-
-used for the channel. 
+​		The Channel Medium Type number is a seven-bit value that identifies the general class of medium that is being used for the channel. 
 
 ![](IPMI通信介质编号.png)
 
@@ -226,21 +220,39 @@ used for the channel.
 
 【1】sel： Print System Event Log (SEL)
 
+- info：This command will query the BMC for information about the System Event Log (SEL) and its contents.
+- list | elist ：When  this  command is invoked without arguments, the entire contents of the System Event Log are displayed. 
+- save < file >：Save SEL records to a text file that can be fed back into the event file ipmitool command.
+
 【2】fru： Print built-in FRU and scan SDR for FRU locators
+
+- print：Read all Field  Replaceable  Unit (FRU) inventory data and extract such information as serial number, part number, asset tags, and short strings describing the chassis, board, or product.
 
 【3】 sdr：Print Sensor Data Repository entries and readings
 
+- info： This command will query the BMC for Sensor Data Record (SDR) Repository information. 
+- type [< sensor type >]：This  command  will  display  all records from the SDR Repository of a specific type. 
+- list | elist [<all|full|compact|event|mcloc|fru|generic>] ： This command will read the Sensor Data Records (SDR) and extract sensor information of a given type,  then query each sensor and print its name, reading, and status.
+
 【4】sensor： Print detailed sensor information
+
+- list：Lists sensors and thresholds in a wide table format.
 
 【5】power：Shortcut to chassis power commands
 
-【6】 mc： Management Controller status and global enables
+【6】mc： Management Controller status and global enables
+
+- info：Displays information about the BMC hardware, including device revision, firmware revision, IPMI version supported, manufacturer ID, and information on additional device support. 
 
 【7】lan： Configure LAN Channels
+
+- print [< channel >]： Print the  current  configuration  for  the  given channel.  The default will print information on the first found LAN channel.
 
 【8】user：Configure Management Controller users
 
 【9】 sol： Configure and connect IPMIv2.0 Serial-over-LAN
+
+- activate [usesolkeepalive | nokeepalive] [instance=]： Causes  ipmitool  to enter Serial Over LAN mode, and is only available when using the lanplus interface. 
 
 3、ipmiutil：
 
