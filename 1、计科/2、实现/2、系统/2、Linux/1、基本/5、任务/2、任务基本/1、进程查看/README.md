@@ -68,7 +68,7 @@
 
 3.6.1、pwdx 1
 
-![07](G:\JiuTou\1、计科\2、实现\2、系统\2、Linux\1、基本\5、任务\2、任务基本\1、进程查看\07.png)
+![07](07.png)
 
 4、pgrep：look up or signal processes based on name and other attributes
 
