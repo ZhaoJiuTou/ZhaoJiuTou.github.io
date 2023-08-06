@@ -1,0 +1,2944 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3、标准库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../../2、基础/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../../../../">
+            
+                <a href="../../../../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../../../../">
+            
+                <a href="../../../../../../">
+            
+                    
+                    1、计科
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../../../../1、理论/">
+            
+                <a href="../../../../../../1、理论/">
+            
+                    
+                    1、理论
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../../../../1、理论/1、组成原理/">
+            
+                <a href="../../../../../../1、理论/1、组成原理/">
+            
+                    
+                    1、组成原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../../../../1、理论/2、体系结构/">
+            
+                <a href="../../../../../../1、理论/2、体系结构/">
+            
+                    
+                    2、体系结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.2.1" data-path="../../../../../../1、理论/2、体系结构/1、概述/">
+            
+                <a href="../../../../../../1、理论/2、体系结构/1、概述/">
+            
+                    
+                    1、概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.2" data-path="../../../../../../1、理论/2、体系结构/2、指令集架构（ISA）/">
+            
+                <a href="../../../../../../1、理论/2、体系结构/2、指令集架构（ISA）/">
+            
+                    
+                    2、指令集架构（ISA）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.3" data-path="../../../../../../1、理论/2、体系结构/3、微架构/">
+            
+                <a href="../../../../../../1、理论/2、体系结构/3、微架构/">
+            
+                    
+                    3、微架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.4" data-path="../../../../../../1、理论/2、体系结构/4、硬件属性/">
+            
+                <a href="../../../../../../1、理论/2、体系结构/4、硬件属性/">
+            
+                    
+                    4、硬件属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.5" data-path="../../../../../../1、理论/2、体系结构/5、并行处理架构/">
+            
+                <a href="../../../../../../1、理论/2、体系结构/5、并行处理架构/">
+            
+                    
+                    5、并行处理架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2.6" data-path="../../../../../../1、理论/2、体系结构/6、性能分析/">
+            
+                <a href="../../../../../../1、理论/2、体系结构/6、性能分析/">
+            
+                    
+                    6、性能分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../../../../../1、理论/3、编译原理/">
+            
+                <a href="../../../../../../1、理论/3、编译原理/">
+            
+                    
+                    3、编译原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../../../../1、理论/4、数据结构算法/">
+            
+                <a href="../../../../../../1、理论/4、数据结构算法/">
+            
+                    
+                    4、数据结构算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../../../../../../1、理论/5、程序设计/">
+            
+                <a href="../../../../../../1、理论/5、程序设计/">
+            
+                    
+                    5、程序设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../../../../../../1、理论/6、操作系统/">
+            
+                <a href="../../../../../../1、理论/6、操作系统/">
+            
+                    
+                    6、操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../../../../../../1、理论/7、软件工程/">
+            
+                <a href="../../../../../../1、理论/7、软件工程/">
+            
+                    
+                    7、软件工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../../../../../../1、理论/8、数学基础/">
+            
+                <a href="../../../../../../1、理论/8、数学基础/">
+            
+                    
+                    8、数学基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../../../../../../1、理论/9、数字逻辑/">
+            
+                <a href="../../../../../../1、理论/9、数字逻辑/">
+            
+                    
+                    9、数字逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../../../">
+            
+                <a href="../../../../../">
+            
+                    
+                    2、实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    1、语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.1" data-path="../../../../1、C/">
+            
+                <a href="../../../../1、C/">
+            
+                    
+                    1、C
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    2、Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    1、基本
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.2.1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    8、导入系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.2.1.2.1.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3、标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2.2" data-path="../../../2、基础/">
+            
+                <a href="../../../2、基础/">
+            
+                    
+                    2、基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1.2.2.1" data-path="../../../2、基础/1、框架/">
+            
+                <a href="../../../2、基础/1、框架/">
+            
+                    
+                    1、框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2.3" data-path="../../../3、高级/">
+            
+                <a href="../../../3、高级/">
+            
+                    
+                    3、高级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" data-path="../../../../3、Golang/">
+            
+                <a href="../../../../3、Golang/">
+            
+                    
+                    3、Golang
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../../../2、系统/">
+            
+                <a href="../../../../../2、系统/">
+            
+                    
+                    2、系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="../../../../../2、系统/2、Linux/">
+            
+                <a href="../../../../../2、系统/2、Linux/">
+            
+                    
+                    2、Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1" data-path="../../../../../2、系统/2、Linux/1、基本/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/">
+            
+                    
+                    1、基本
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.1" >
+            
+                <span>
+            
+                    
+                    1、概述
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.1.1" data-path="../../../../../2、系统/2、Linux/1、基本/1、概述/1、概述/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/1、概述/1、概述/">
+            
+                    
+                    1、概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.1.2" data-path="../../../../../2、系统/2、Linux/1、基本/1、概述/2、基础/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/1、概述/2、基础/">
+            
+                    
+                    2、基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.1.3" data-path="../../../../../2、系统/2、Linux/1、基本/1、概述/3、指令/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/1、概述/3、指令/">
+            
+                    
+                    3、指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.2" data-path="../../../../../2、系统/2、Linux/1、基本/2、用户/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/2、用户/">
+            
+                    
+                    2、用户
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.3" >
+            
+                <span>
+            
+                    
+                    3、文件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.3.1" data-path="../../../../../2、系统/2、Linux/1、基本/3、文件/1、文件概述/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/3、文件/1、文件概述/">
+            
+                    
+                    1、文件概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.3.2" data-path="../../../../../2、系统/2、Linux/1、基本/3、文件/2、文件基本/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/3、文件/2、文件基本/">
+            
+                    
+                    2、文件基本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.3.3" data-path="../../../../../2、系统/2、Linux/1、基本/3、文件/3、文件高阶/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/3、文件/3、文件高阶/">
+            
+                    
+                    3、文件高阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.3.3.1" data-path="../../../../../2、系统/2、Linux/1、基本/3、文件/3、文件高阶/3、基础工具/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/3、文件/3、文件高阶/3、基础工具/">
+            
+                    
+                    3、基础工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4" >
+            
+                <span>
+            
+                    
+                    4、系统
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.1" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/">
+            
+                    
+                    1、系统管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.1.1" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/1、系统/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/1、系统/">
+            
+                    
+                    1、系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.1.2" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/2、资源/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/2、资源/">
+            
+                    
+                    2、资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.1.3" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/3、内核/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/3、内核/">
+            
+                    
+                    3、内核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.1.4" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/4、设备/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/4、设备/">
+            
+                    
+                    4、设备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.1.5" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/5、安全/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/5、安全/">
+            
+                    
+                    5、安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.1.6" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/6、其他/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/1、系统管理/6、其他/">
+            
+                    
+                    6、其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.2" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/2、软件管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/2、软件管理/">
+            
+                    
+                    2、软件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.4.3" data-path="../../../../../2、系统/2、Linux/1、基本/4、系统/3、外壳管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/4、系统/3、外壳管理/">
+            
+                    
+                    3、外壳管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.5" data-path="../../../../../2、系统/2、Linux/1、基本/5、任务/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/5、任务/">
+            
+                    
+                    5、任务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.5.1" data-path="../../../../../2、系统/2、Linux/1、基本/5、任务/1、任务概述/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/5、任务/1、任务概述/">
+            
+                    
+                    1、任务概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.5.2" data-path="../../../../../2、系统/2、Linux/1、基本/5、任务/2、任务基本/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/5、任务/2、任务基本/">
+            
+                    
+                    2、任务基本
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.5.2.1" data-path="../../../../../2、系统/2、Linux/1、基本/5、任务/2、任务基本/1、进程查看/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/5、任务/2、任务基本/1、进程查看/">
+            
+                    
+                    1、进程查看
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.5.3" data-path="../../../../../2、系统/2、Linux/1、基本/5、任务/3、任务高阶/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/5、任务/3、任务高阶/">
+            
+                    
+                    3、任务高阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.6" data-path="../../../../../2、系统/2、Linux/1、基本/6、服务/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/6、服务/">
+            
+                    
+                    6、服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.6.1" data-path="../../../../../2、系统/2、Linux/1、基本/6、服务/1、服务概述/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/6、服务/1、服务概述/">
+            
+                    
+                    1、服务概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.6.2" data-path="../../../../../2、系统/2、Linux/1、基本/6、服务/2、服务管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/6、服务/2、服务管理/">
+            
+                    
+                    2、服务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.6.3" data-path="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/">
+            
+                    
+                    3、服务详解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.6.3.1" data-path="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/1、基本服务/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/1、基本服务/">
+            
+                    
+                    1、基本服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.6.3.2" data-path="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/2、基础服务/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/2、基础服务/">
+            
+                    
+                    2、基础服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.6.3.3" data-path="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/3、系统服务/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/6、服务/3、服务详解/3、系统服务/">
+            
+                    
+                    3、系统服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/">
+            
+                    
+                    7、单元
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.1" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/1、单元概述/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/1、单元概述/">
+            
+                    
+                    1、单元概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.2" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/">
+            
+                    
+                    2、单元管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.2.1" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/1、主序管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/1、主序管理/">
+            
+                    
+                    1、主序管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.2.2" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/">
+            
+                    
+                    2、次序管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.2.2.1" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/1、平台/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/1、平台/">
+            
+                    
+                    1、平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.2.2.1.1" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/1、平台/1、DMI/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/1、平台/1、DMI/">
+            
+                    
+                    1、DMI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.2.2.1.2" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/1、平台/2、IPMI/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/2、次序管理/1、平台/2、IPMI/">
+            
+                    
+                    2、IPMI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.2.3" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/3、复合工具/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/2、单元管理/3、复合工具/">
+            
+                    
+                    3、复合工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.7.3" data-path="../../../../../2、系统/2、Linux/1、基本/7、单元/3、资源管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/7、单元/3、资源管理/">
+            
+                    
+                    3、资源管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.8" data-path="../../../../../2、系统/2、Linux/1、基本/8、存储/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/8、存储/">
+            
+                    
+                    8、存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.9" data-path="../../../../../2、系统/2、Linux/1、基本/9、网络/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/9、网络/">
+            
+                    
+                    9、网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.9.1" data-path="../../../../../2、系统/2、Linux/1、基本/9、网络/3、网络应用/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/9、网络/3、网络应用/">
+            
+                    
+                    3、网络应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.1.9.1.1" data-path="../../../../../2、系统/2、Linux/1、基本/9、网络/3、网络应用/2、网络服务/">
+            
+                <a href="../../../../../2、系统/2、Linux/1、基本/9、网络/3、网络应用/2、网络服务/">
+            
+                    
+                    2、网络服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2" data-path="../../../../../2、系统/2、Linux/2、基础/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/">
+            
+                    
+                    2、基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.1" data-path="../../../../../2、系统/2、Linux/2、基础/1、系统编程/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/1、系统编程/">
+            
+                    
+                    1、系统编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.2" data-path="../../../../../2、系统/2、Linux/2、基础/2、经典解析/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/2、经典解析/">
+            
+                    
+                    2、经典解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3" data-path="../../../../../2、系统/2、Linux/2、基础/3、可观测性/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/3、可观测性/">
+            
+                    
+                    3、可观测性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.1" >
+            
+                <span>
+            
+                    
+                    2、采集机制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.1.1" data-path="../../../../../2、系统/2、Linux/2、基础/3、可观测性/2、采集机制/1、ebpf/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/3、可观测性/2、采集机制/1、ebpf/">
+            
+                    
+                    1、ebpf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.1.2" data-path="../../../../../2、系统/2、Linux/2、基础/3、可观测性/2、采集机制/2、perf-events/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/3、可观测性/2、采集机制/2、perf-events/">
+            
+                    
+                    2、perf-events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.1.3" data-path="../../../../../2、系统/2、Linux/2、基础/3、可观测性/2、采集机制/3、ftrace/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/3、可观测性/2、采集机制/3、ftrace/">
+            
+                    
+                    3、ftrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.2" >
+            
+                <span>
+            
+                    
+                    3、前端工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.2.1" data-path="../../../../../2、系统/2、Linux/2、基础/3、可观测性/3、前端工具/1、ebpf/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/3、可观测性/3、前端工具/1、ebpf/">
+            
+                    
+                    1、ebpf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.2.2" data-path="../../../../../2、系统/2、Linux/2、基础/3、可观测性/3、前端工具/2、perf-events/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/3、可观测性/3、前端工具/2、perf-events/">
+            
+                    
+                    2、perf-events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.2.3.2.3" data-path="../../../../../2、系统/2、Linux/2、基础/3、可观测性/3、前端工具/3、ftrace/">
+            
+                <a href="../../../../../2、系统/2、Linux/2、基础/3、可观测性/3、前端工具/3、ftrace/">
+            
+                    
+                    3、ftrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3" data-path="../../../../../2、系统/2、Linux/3、高级/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/">
+            
+                    
+                    3、高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.1" data-path="../../../../../2、系统/2、Linux/3、高级/1、内核概述/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/1、内核概述/">
+            
+                    
+                    1、内核概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.2" data-path="../../../../../2、系统/2、Linux/3、高级/2、内核架构/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/2、内核架构/">
+            
+                    
+                    2、内核架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.2.1" data-path="../../../../../2、系统/2、Linux/3、高级/2、内核架构/1、进程管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/2、内核架构/1、进程管理/">
+            
+                    
+                    1、进程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.2.2" data-path="../../../../../2、系统/2、Linux/3、高级/2、内核架构/2、进程通信/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/2、内核架构/2、进程通信/">
+            
+                    
+                    2、进程通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.2.3" data-path="../../../../../2、系统/2、Linux/3、高级/2、内核架构/3、内存管理/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/2、内核架构/3、内存管理/">
+            
+                    
+                    3、内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.2.4" data-path="../../../../../2、系统/2、Linux/3、高级/2、内核架构/4、文件系统/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/2、内核架构/4、文件系统/">
+            
+                    
+                    4、文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.2.5" data-path="../../../../../2、系统/2、Linux/3、高级/2、内核架构/5、网络系统/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/2、内核架构/5、网络系统/">
+            
+                    
+                    5、网络系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.2.6" data-path="../../../../../2、系统/2、Linux/3、高级/2、内核架构/6、系统调用/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/2、内核架构/6、系统调用/">
+            
+                    
+                    6、系统调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.3" data-path="../../../../../2、系统/2、Linux/3、高级/3、源码解析/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/3、源码解析/">
+            
+                    
+                    3、源码解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.3.1" data-path="../../../../../2、系统/2、Linux/3、高级/3、源码解析/1、1.0/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/3、源码解析/1、1.0/">
+            
+                    
+                    1、1.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.3.2" data-path="../../../../../2、系统/2、Linux/3、高级/3、源码解析/2、3.10.1/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/3、源码解析/2、3.10.1/">
+            
+                    
+                    2、3.10.1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.1.3.3.3" data-path="../../../../../2、系统/2、Linux/3、高级/3、源码解析/3、4.9/">
+            
+                <a href="../../../../../2、系统/2、Linux/3、高级/3、源码解析/3、4.9/">
+            
+                    
+                    3、4.9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../../../3、网络/">
+            
+                <a href="../../../../../3、网络/">
+            
+                    
+                    3、网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../../../../3、应用/">
+            
+                <a href="../../../../../../3、应用/">
+            
+                    
+                    3、应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../../../../3、应用/1、基础设施/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/">
+            
+                    
+                    1、基础设施
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1" data-path="../../../../../../3、应用/1、基础设施/1、虚拟化/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/1、虚拟化/">
+            
+                    
+                    1、虚拟化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.1.1" data-path="../../../../../../3、应用/1、基础设施/1、虚拟化/1、KVM/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/1、虚拟化/1、KVM/">
+            
+                    
+                    1、KVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.1.2" data-path="../../../../../../3、应用/1、基础设施/1、虚拟化/2、Docker/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/1、虚拟化/2、Docker/">
+            
+                    
+                    2、Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.1.3" data-path="../../../../../../3、应用/1、基础设施/1、虚拟化/3、PodMan/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/1、虚拟化/3、PodMan/">
+            
+                    
+                    3、PodMan
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.2" data-path="../../../../../../3、应用/1、基础设施/2、云计算/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/2、云计算/">
+            
+                    
+                    2、云计算
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.2.1" data-path="../../../../../../3、应用/1、基础设施/2、云计算/1、OpenStack/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/2、云计算/1、OpenStack/">
+            
+                    
+                    1、OpenStack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3" data-path="../../../../../../3、应用/1、基础设施/3、云原生/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/3、云原生/">
+            
+                    
+                    3、云原生
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1.3.1" data-path="../../../../../../3、应用/1、基础设施/3、云原生/1、Kubernetes/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/3、云原生/1、Kubernetes/">
+            
+                    
+                    1、Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3.2" data-path="../../../../../../3、应用/1、基础设施/3、云原生/2、Helm/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/3、云原生/2、Helm/">
+            
+                    
+                    2、Helm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3.3" data-path="../../../../../../3、应用/1、基础设施/3、云原生/3、Rancher/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/3、云原生/3、Rancher/">
+            
+                    
+                    3、Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3.4" data-path="../../../../../../3、应用/1、基础设施/3、云原生/4、Istio/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/3、云原生/4、Istio/">
+            
+                    
+                    4、Istio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3.5" data-path="../../../../../../3、应用/1、基础设施/3、云原生/5、KubeSphere/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/3、云原生/5、KubeSphere/">
+            
+                    
+                    5、KubeSphere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.1.3.6" data-path="../../../../../../3、应用/1、基础设施/3、云原生/6、gRPC/">
+            
+                <a href="../../../../../../3、应用/1、基础设施/3、云原生/6、gRPC/">
+            
+                    
+                    6、gRPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../../../../../3、应用/2、运维应用/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/">
+            
+                    
+                    2、运维应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.2.1" data-path="../../../../../../3、应用/2、运维应用/1、Ansible/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/1、Ansible/">
+            
+                    
+                    1、Ansible
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2" data-path="../../../../../../3、应用/2、运维应用/2、ElasticStack/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/2、ElasticStack/">
+            
+                    
+                    2、ElasticStack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.2.2.1" data-path="../../../../../../3、应用/2、运维应用/2、ElasticStack/1、概述/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/2、ElasticStack/1、概述/">
+            
+                    
+                    1、概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2.2" data-path="../../../../../../3、应用/2、运维应用/2、ElasticStack/2、Elasticsearch/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/2、ElasticStack/2、Elasticsearch/">
+            
+                    
+                    2、Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2.3" data-path="../../../../../../3、应用/2、运维应用/2、ElasticStack/3、Kibana/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/2、ElasticStack/3、Kibana/">
+            
+                    
+                    3、Kibana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2.4" data-path="../../../../../../3、应用/2、运维应用/2、ElasticStack/4、Logstash/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/2、ElasticStack/4、Logstash/">
+            
+                    
+                    4、Logstash
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2.5" data-path="../../../../../../3、应用/2、运维应用/2、ElasticStack/5、Beats/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/2、ElasticStack/5、Beats/">
+            
+                    
+                    5、Beats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.2.6" data-path="../../../../../../3、应用/2、运维应用/2、ElasticStack/6、其他/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/2、ElasticStack/6、其他/">
+            
+                    
+                    6、其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.3" data-path="../../../../../../3、应用/2、运维应用/3、Prometheus/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/3、Prometheus/">
+            
+                    
+                    3、Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.4" data-path="../../../../../../3、应用/2、运维应用/4、Grafana/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/4、Grafana/">
+            
+                    
+                    4、Grafana
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.5" data-path="../../../../../../3、应用/2、运维应用/5、Zabbix/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/5、Zabbix/">
+            
+                    
+                    5、Zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2.6" data-path="../../../../../../3、应用/2、运维应用/6、Git/">
+            
+                <a href="../../../../../../3、应用/2、运维应用/6、Git/">
+            
+                    
+                    6、Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../../../../../3、应用/3、应用运维/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/">
+            
+                    
+                    3、应用运维
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.1" data-path="../../../../../../3、应用/3、应用运维/1、集群/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/1、集群/">
+            
+                    
+                    1、集群
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.1.1" data-path="../../../../../../3、应用/3、应用运维/1、集群/1、LVS/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/1、集群/1、LVS/">
+            
+                    
+                    1、LVS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.1.2" data-path="../../../../../../3、应用/3、应用运维/1、集群/2、Nginx/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/1、集群/2、Nginx/">
+            
+                    
+                    2、Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.1.3" data-path="../../../../../../3、应用/3、应用运维/1、集群/3、HAproxy/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/1、集群/3、HAproxy/">
+            
+                    
+                    3、HAproxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.1.4" data-path="../../../../../../3、应用/3、应用运维/1、集群/4、Keepalived/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/1、集群/4、Keepalived/">
+            
+                    
+                    4、Keepalived
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.1.5" data-path="../../../../../../3、应用/3、应用运维/1、集群/5、Linux-HA/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/1、集群/5、Linux-HA/">
+            
+                    
+                    5、Linux-HA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.1.6" data-path="../../../../../../3、应用/3、应用运维/1、集群/6、PaceMaker/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/1、集群/6、PaceMaker/">
+            
+                    
+                    6、PaceMaker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.2" data-path="../../../../../../3、应用/3、应用运维/2、分布式/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/2、分布式/">
+            
+                    
+                    2、分布式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.2.1" data-path="../../../../../../3、应用/3、应用运维/2、分布式/1、Hadoop/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/2、分布式/1、Hadoop/">
+            
+                    
+                    1、Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.2.2" data-path="../../../../../../3、应用/3、应用运维/2、分布式/2、Ceph/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/2、分布式/2、Ceph/">
+            
+                    
+                    2、Ceph
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.2.3" data-path="../../../../../../3、应用/3、应用运维/2、分布式/3、Kafka/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/2、分布式/3、Kafka/">
+            
+                    
+                    3、Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.2.4" data-path="../../../../../../3、应用/3、应用运维/2、分布式/4、Consul/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/2、分布式/4、Consul/">
+            
+                    
+                    4、Consul
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.2.5" data-path="../../../../../../3、应用/3、应用运维/2、分布式/5、Zookeeper/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/2、分布式/5、Zookeeper/">
+            
+                    
+                    5、Zookeeper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.2.6" data-path="../../../../../../3、应用/3、应用运维/2、分布式/6、Flume/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/2、分布式/6、Flume/">
+            
+                    
+                    6、Flume
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/">
+            
+                    
+                    3、基础应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.3.1" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/">
+            
+                    
+                    1、服务器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.3.1.1" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/1、Nginx/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/1、Nginx/">
+            
+                    
+                    1、Nginx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.1.2" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/2、Squid/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/2、Squid/">
+            
+                    
+                    2、Squid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.1.3" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/3、MemCached/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/1、服务器/3、MemCached/">
+            
+                    
+                    3、MemCached
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/">
+            
+                    
+                    2、数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/">
+            
+                    
+                    1、MySQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.1" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/">
+            
+                    
+                    1、概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.1.1" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/1、基本概述/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/1、基本概述/">
+            
+                    
+                    1、基本概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.1.2" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/2、体系结构/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/2、体系结构/">
+            
+                    
+                    2、体系结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.1.3" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/3、磁盘文件/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/3、磁盘文件/">
+            
+                    
+                    3、磁盘文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.1.4" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/4、存储引擎/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/4、存储引擎/">
+            
+                    
+                    4、存储引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.1.5" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/5、存储对象/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/5、存储对象/">
+            
+                    
+                    5、存储对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.1.6" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/6、基本库表/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/1、概述/6、基本库表/">
+            
+                    
+                    6、基本库表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.2" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/2、架构/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/2、架构/">
+            
+                    
+                    2、架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.3" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/3、配置/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/3、配置/">
+            
+                    
+                    3、配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.4" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/4、工具/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/4、工具/">
+            
+                    
+                    4、工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.5" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/5、组件/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/5、组件/">
+            
+                    
+                    5、组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.1.6" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/6、其他/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/1、MySQL/6、其他/">
+            
+                    
+                    6、其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.2" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/2、Redis/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/2、Redis/">
+            
+                    
+                    2、Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.2.3" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/3、MangoDB/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/2、数据库/3、MangoDB/">
+            
+                    
+                    3、MangoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.3" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/3、中间件/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/3、中间件/">
+            
+                    
+                    3、中间件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.3.3.3.1" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/3、中间件/1、RabbitMQ/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/3、中间件/1、RabbitMQ/">
+            
+                    
+                    1、RabbitMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3.3.3.2" data-path="../../../../../../3、应用/3、应用运维/3、基础应用/3、中间件/2、RocketMQ/">
+            
+                <a href="../../../../../../3、应用/3、应用运维/3、基础应用/3、中间件/2、RocketMQ/">
+            
+                    
+                    2、RocketMQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../../../../../2、摘录/">
+            
+                <a href="../../../../../../../2、摘录/">
+            
+                    
+                    2、摘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../../../../../3、随笔/">
+            
+                <a href="../../../../../../../3、随笔/">
+            
+                    
+                    3、随笔
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../../../../../3、随笔/1、书单/">
+            
+                <a href="../../../../../../../3、随笔/1、书单/">
+            
+                    
+                    1、书单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../../../../.." >3、标准库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6807;&#x51C6;&#x5E93;">&#x6807;&#x51C6;&#x5E93;</h1>
+<h2 id="&#x524D;&#x8FF0;">&#x524D;&#x8FF0;</h2>
+<p>1&#x3001;&#x53C2;&#x8003;&#x6765;&#x6E90;&#xFF1A;&#x300A;Python&#x8BED;&#x8A00;&#x53C2;&#x8003;&#x624B;&#x518C;&#x300B;Python&#x6807;&#x51C6;&#x5E93;</p>
+<p>2&#x3001;Python&#x7248;&#x672C;&#xFF1A;3.10.5</p>
+<p>3&#x3001;Python&#x624B;&#x518C;&#x7248;&#x672C;&#xFF1A;3.10.5</p>
+<p>4&#x3001;Python&#x624B;&#x518C;&#x53C2;&#x8003;&#x5730;&#x5740;&#xFF1A;</p>
+<p><a href=""> </a><a href="https://docs.python.org/zh-cn/3.10/library/" target="_blank">https://docs.python.org/zh-cn/3.10/library/</a></p>
+<p>5&#x3001;&#x672C;&#x7BC7;&#x5185;&#x5BB9;&#x53EA;&#x89E3;&#x6790;Linux&#x4E0B;&#x9002;&#x7528;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>6&#x3001;&#x672C;&#x7BC7;&#x5185;&#x5BB9;&#x4E3B;&#x8981;&#x89E3;&#x6790;&#x5E76;&#x6F14;&#x793A;&#x672C;&#x4EBA;&#x8BA4;&#x4E3A;&#x91CD;&#x8981;&#x6027;&#x504F;&#x9AD8;&#x53CA;&#x4F7F;&#x7528;&#x7387;&#x8F83;&#x9AD8;&#x7684;&#x3002;</p>
+<h2 id="&#x6807;&#x51C6;&#x5E93;">&#x6807;&#x51C6;&#x5E93;</h2>
+<h2 id="&#x901A;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;">&#x901A;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;</h2>
+<h4 id="os">os</h4>
+<h5 id="&#x8FDB;&#x7A0B;&#x53C2;&#x6570;">&#x8FDB;&#x7A0B;&#x53C2;&#x6570;</h5>
+<p>1&#x3001;&#x8FDB;&#x7A0B;&#x53CA;&#x8FDB;&#x7A0B;&#x95F4;&#x5173;&#x7CFB;</p>
+<p>&#x3010;1&#x3011;os.getpid() &#xFF1A; Return the current process id.</p>
+<p>&#x3010;2&#x3011;os.getppid() &#xFF1A; Return the parent&#x2019;s process id. </p>
+<p>&#x3010;3&#x3011;os.getpgrp() &#xFF1A; Return the id of the current process group.</p>
+<p>&#x3010;4&#x3011;os.getpgid(pid) &#xFF1A; Return the process group id of the process with process id pid. </p>
+<p><img src="&#x8FDB;&#x7A0B;&#x4E0E;&#x8FDB;&#x7A0B;&#x95F4;&#x5173;&#x7CFB;.png" alt="&#x8FDB;&#x7A0B;&#x4E0E;&#x8FDB;&#x7A0B;&#x95F4;&#x5173;&#x7CFB;"></p>
+<p>2&#x3001;&#x8FDB;&#x7A0B;&#x5C5E;&#x4E3B;&#x5C5E;&#x7EC4;</p>
+<p>&#x3010;1&#x3011;os.getlogin() &#xFF1A; Return the name of the user logged in on the controlling terminal of the process.</p>
+<p>&#x3010;2&#x3011;os.getuid() &#xFF1A; Return the current process&#x2019;s real user id.</p>
+<p>&#x3010;3&#x3011;os.getgid() &#xFF1A;Return the real group id of the current process.</p>
+<p>&#x3010;4&#x3011;os.geteuid() &#xFF1A; Return the current process&#x2019;s effective user id.</p>
+<p>&#x3010;5&#x3011;os.getegid() &#xFF1A; Return the effective group id of the current process. </p>
+<p>&#x3010;6&#x3011;os.getgroups() &#xFF1A; Return list of supplemental group ids associated with the current process.</p>
+<p><img src="&#x8FDB;&#x7A0B;&#x5C5E;&#x4E3B;&#x5C5E;&#x7EC4;.png" alt="&#x8FDB;&#x7A0B;&#x5C5E;&#x4E3B;&#x5C5E;&#x7EC4;"></p>
+<p>3&#x3001;&#x8FDB;&#x7A0B;&#x73AF;&#x5883;&#x4FE1;&#x606F;</p>
+<p>&#x3010;1&#x3011;os.environ &#xFF1A;A mapping object where keys and values are strings that represent the process environment.</p>
+<p>&#x3010;2&#x3011;os.uname() &#xFF1A; Returns information identifying the current operating system. </p>
+<p>&#x3010;3&#x3011;os.ctermid() &#xFF1A; Return the filename corresponding to the controlling terminal of the process.</p>
+<p>&#x3010;4&#x3011;os.getenv(key, default=None) &#xFF1A; Return the value of the environment variable key if it exists, or default if it doesn&#x2019;t.  key, default and the result are str. </p>
+<p><img src="&#x8FDB;&#x7A0B;&#x73AF;&#x5883;&#x4FE1;&#x606F;png.png" alt="&#x8FDB;&#x7A0B;&#x73AF;&#x5883;&#x4FE1;&#x606F;png"></p>
+<h5 id="&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;">&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</h5>
+<h6 id="&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;">&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;</h6>
+<p>1&#x3001;os.fork() : Fork a child process. Return 0 in the child and the child&#x2019;s process id in the parent. </p>
+<p><img src="&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;_fork.png" alt="&#x8FDB;&#x7A0B;&#x521B;&#x5EFA;_fork"></p>
+<p>2&#x3001;spawn<em> &#xFF1A;Execute the program </em>path* in a new process.</p>
+<p>&#x3010;1&#x3011;&#x51FD;&#x6570;&#x5217;&#x8868;</p>
+<ul>
+<li>os.spawnl(mode, path, ...)</li>
+<li>os.spawnle(mode, path, ..., env)</li>
+<li>os.spawnlp(mode, file, ...)</li>
+<li>os.spawnlpe(mode, file, ..., env)</li>
+<li>os.spawnv(mode, path, args)</li>
+<li>os.spawnve(mode, path, args, env)</li>
+<li>os.spawnvp(mode, file, args)</li>
+<li>os.spawnvpe(mode, file, args, env)</li>
+</ul>
+<p>&#x3010;2&#x3011;&#x540D;&#x79F0;&#x540E;&#x7F00;&#x89E3;&#x91CA;</p>
+<ul>
+<li>spawn* &#x51FD;&#x6570;&#x7684; &quot;l&quot; &#x548C; &quot;v&quot; &#x53D8;&#x4F53;&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x7684;&#x4F20;&#x9012;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>&#x7ED3;&#x5C3E;&#x5305;&#x542B;&#x7B2C;&#x4E8C;&#x4E2A; &quot;p&quot; &#x7684;&#x53D8;&#x4F53;&#x5C06;&#x4F7F;&#x7528; PATH &#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6765;&#x67E5;&#x627E;&#x7A0B;&#x5E8F; file&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x4EE5;e&#x7ED3;&#x5C3E;&#x7684;&#x51FD;&#x6570;&#xFF0C;env &#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x6620;&#x5C04;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x65B0;&#x8FDB;&#x7A0B;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF08;&#x4EE3;&#x66FF;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF09;&#x3002;</li>
+</ul>
+<p>&#x3010;3&#x3011;mode &#x53C2;&#x6570;&#x7684;&#x53EF;&#x53D6;&#x503C;</p>
+<ul>
+<li>os.P_NOWAIT</li>
+<li>os.P_NOWAITO</li>
+<li>os.P_WAIT</li>
+</ul>
+<p><img src="spawn_.png" alt="spawn_"></p>
+<p>3&#x3001;exec* &#xFF1A; These functions all execute a new program, replacing the current process;</p>
+<p>&#x3010;1&#x3011;&#x51FD;&#x6570;&#x5217;&#x8868;</p>
+<ul>
+<li>os.execl(path, arg0, arg1, ...)</li>
+<li>os.execle(path, arg0, arg1, ..., env)</li>
+<li>os.execlp(file, arg0, arg1, ...)</li>
+<li>os.execlpe(file, arg0, arg1, ..., env)</li>
+<li>os.execv(path, args)</li>
+<li>os.execve(path, args, env)</li>
+<li>os.execvp(file, args)</li>
+<li>os.execvpe(file, args, env)</li>
+</ul>
+<p><img src="exec_.png" alt="exec_"></p>
+<h6 id="&#x8FDB;&#x7A0B;&#x56DE;&#x6536;">&#x8FDB;&#x7A0B;&#x56DE;&#x6536;</h6>
+<p>1&#x3001;os.wait() &#xFF1A; Wait for completion of a child process, and return a tuple containing its pid and exit status indication</p>
+<p>2&#x3001;os.waitpid(pid, options)  &#xFF1A; Wait for completion of a child process given by process id <em>pid</em>, and return a tuple containing its process id and exit status indication </p>
+<p>3&#x3001;os.wait3(options) &#xFF1A; Similar to waitpid(), except no process id argument is given and a 3-element tuple containing the child&#x2019;s process id, exit status indication, and resource usage information is returned. </p>
+<p>4&#x3001;os.wait4(pid, options) &#xFF1A; Similar to waitpid(), except a 3-element tuple, containing the child&#x2019;s process id, exit status indication, and resource usage information is returned. </p>
+<p><img src="wait.png" alt="wait"></p>
+<h6 id="&#x8FDB;&#x7A0B;&#x9000;&#x51FA;">&#x8FDB;&#x7A0B;&#x9000;&#x51FA;</h6>
+<p>1&#x3001;os._exit(n) &#xFF1A; Exit the process with status <em>n</em>, without calling cleanup handlers, flushing stdio buffers, etc.</p>
+<p>&#x6CE8;&#xFF1A;sys.exit(n)&#x8BB2;Python&#x8FD0;&#x884C;&#x65F6;&#x670D;&#x52A1;&#x65F6;&#x518D;&#x8BB2;&#x89E3;</p>
+<p><img src="&#x8FDB;&#x7A0B;&#x9000;&#x51FA;.png" alt="&#x8FDB;&#x7A0B;&#x9000;&#x51FA;"></p>
+<h6 id="&#x8FDB;&#x7A0B;&#x4FE1;&#x53F7;">&#x8FDB;&#x7A0B;&#x4FE1;&#x53F7;</h6>
+<p>1&#x3001;os.abort() &#xFF1A; Generate a SIGABRT signal to the current process. </p>
+<p>2&#x3001;os.kill(pid, sig) &#xFF1A; Send signal sig to the process pid. </p>
+<p>3&#x3001;os.killpg(pgid, sig) &#xFF1A; Send the signal sig to the process group pgid.</p>
+<p><img src="001.png" alt="001"></p>
+<p><img src="002.png" alt="002"></p>
+<p><img src="003.png" alt="003"></p>
+<p><img src="004.png" alt="004"></p>
+<p><img src="005.png" alt="005"></p>
+<p><img src="006.png" alt="006"></p>
+<h6 id="&#x8FDB;&#x7A0B;&#x4F18;&#x5148;&#x7EA7;">&#x8FDB;&#x7A0B;&#x4F18;&#x5148;&#x7EA7;</h6>
+<p>1&#x3001;os.nice(increment)</p>
+<p><img src="nice.png" alt="nice"></p>
+<h5 id="&#x8FDB;&#x7A0B;&#x5176;&#x4ED6;">&#x8FDB;&#x7A0B;&#x5176;&#x4ED6;</h5>
+<p>os.times() &#xFF1A; Returns the current global process times. The return value is an object with five attributes.</p>
+<p>os.system(command) &#xFF1A; Execute the command (a string) in a subshell.</p>
+<p>os.popen(cmd, mode=&apos;r&apos;, buffering=- 1) &#xFF1A; Open a pipe to or from command cmd. </p>
+<p><img src="&#x8FDB;&#x7A0B;&#x5176;&#x4ED6;.png" alt="&#x8FDB;&#x7A0B;&#x5176;&#x4ED6;"></p>
+<h6 id="&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;">&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;</h6>
+<p>1&#x3001;os.fdopen(fd, <em>args, *</em>kwargs) &#xFF1A; Return an open file object connected to the file descriptor fd.</p>
+<p>2&#x3001;os.open(path, flags, mode=0o777, *, dir_fd=None) &#xFF1A; Open the file path and set various flags according to flags and possibly its mode according to mode. </p>
+<p>3&#x3001;os.close(fd) &#xFF1A; Read at most n bytes from file descriptor fd.</p>
+<p>4&#x3001;os.read(fd, n) &#xFF1A; Read at most n bytes from file descriptor fd.</p>
+<p>5&#x3001;os.write(fd, str) &#xFF1A; Write the bytestring in str to file descriptor fd.</p>
+<p>6&#x3001;os.fsync(fd) &#xFF1A; Force write of file with filedescriptor fd to disk. </p>
+<p>7&#x3001;os.fstatvfs(fd) &#xFF1A; Return information about the filesystem containing the file associated with file descriptor fd, like statvfs(). </p>
+<p>8&#x3001;os.fstat(fd) &#xFF1A; Get the status of the file descriptor <em>fd</em>. Return a stat_result object.</p>
+<p>9&#x3001;os.pipe() &#xFF1A; Create a pipe. Return a pair of file descriptors (r, w) usable for reading and writing, respectively. </p>
+<p><img src="&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;.png" alt="&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;"></p>
+<p><img src="pipe.png" alt="pipe"></p>
+<h6 id="&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;">&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;</h6>
+<p>1&#x3001;os.stat(path, *, dir_fd=None, follow_symlinks=True)&#xFF1A;Get the status of a file or a file descriptor. Perform the equivalent of a stat() system call on the given path. </p>
+<p>2&#x3001;os.lstat(path, *, dir_fd=None)&#xFF1A;Perform the equivalent of an lstat() system call on the given path. Similar to stat(), but does not follow symbolic links. </p>
+<p>3&#x3001;os.listdir(path=&apos;.&apos;)&#xFF1A;Return a list containing the names of the entries in the directory given by path. </p>
+<p>4&#x3001;os.pathconf(path, name)&#xFF1A;Return system configuration information relevant to a named file. </p>
+<p>5&#x3001;os.getcwd()&#xFF1A;Return a string representing the current working directory.</p>
+<p>6&#x3001;os.chdir(path)&#xFF1A;Change the current working directory to path.</p>
+<p>7&#x3001;os.sync()&#xFF1A;Force write of everything to disk.</p>
+<p><img src="&#x6587;&#x4EF6;.png" alt="&#x6587;&#x4EF6;"></p>
+<h4 id="time">time</h4>
+<p>1&#x3001;time.time() &#xFF1A; Return the time in seconds since the epoch as a floating point number.</p>
+<p>2&#x3001;time.ctime([secs]) &#xFF1A; Convert a time expressed in seconds since the epoch to a string of a form</p>
+<p>3&#x3001;time.gmtime([secs]) &#xFF1A; Convert a time expressed in seconds since the epoch to a struct_time in UTC in which the dst flag is always zero. </p>
+<p>4&#x3001;time.localtime([secs]) &#xFF1A; Suspend execution of the calling thread for the given number of seconds. </p>
+<p>5&#x3001;time.sleep(secs) &#xFF1A; Suspend execution of the calling thread for the given number of seconds. </p>
+<p>6&#x3001;time.process_time() &#xFF1A; Return the value (in fractional seconds) of the sum of the system and user CPU time of the current process. </p>
+<p>7&#x3001;time.thread_time()  &#xFF1A; Return the value (in fractional seconds) of the sum of the system and user CPU time of the current thread. </p>
+<p><img src="time.png" alt="time"></p>
+<h4 id="platform">platform</h4>
+<p>01&#x3001;platform.architecture(executable=sys.executable, bits=&apos;&apos;, linkage=&apos;&apos;)  &#xFF1A; Queries the given executable (defaults to the Python interpreter binary) for various architecture information.</p>
+<p>02&#x3001;platform.machine() &#xFF1A; Returns the machine type</p>
+<p>03&#x3001;platform.node() &#xFF1A; Returns the computer&#x2019;s network name (may not be fully qualified!).</p>
+<p>04&#x3001;platform.platform(aliased=0, terse=0) &#xFF1A; Returns a single string identifying the underlying platform with as much useful information as possible.</p>
+<p>05&#x3001;platform.processor() &#xFF1A; Returns the (real) processor name</p>
+<p>06&#x3001;platform.python_build() &#xFF1A; Returns a tuple (buildno, builddate) stating the Python build number and date as strings.</p>
+<p>07&#x3001;platform.release() &#xFF1A; Returns the system&#x2019;s release</p>
+<p>08&#x3001;platform.system() &#xFF1A; Returns the system/OS name</p>
+<p>09&#x3001;platform.version() &#xFF1A; Returns the system&#x2019;s release version</p>
+<p>10&#x3001;platform.uname() &#xFF1A; Fairly portable uname interface. </p>
+<p>11&#x3001;platform.freedesktop_os_release() &#xFF1A; Get operating system identification from os-release file and return it as a dict. </p>
+<p><img src="platform.png" alt="platform"></p>
+<h5 id="&#x8C03;&#x5EA6;&#x5668;&#x63A5;&#x53E3;">&#x8C03;&#x5EA6;&#x5668;&#x63A5;&#x53E3;</h5>
+<h5 id="&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;&#x73AF;&#x5883;&#x53D8;&#x91CF;">&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;&#x73AF;&#x5883;&#x53D8;&#x91CF;</h5>
+<h5 id="&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;">&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;</h5>
+<h5 id="&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x64CD;&#x4F5C;">&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x64CD;&#x4F5C;</h5>
+<h5 id="&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;">&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;</h5>
+<h4 id="io">io</h4>
+<h4 id="time">time</h4>
+<h4 id="platform">platform</h4>
+<h4 id="argparse">argparse</h4>
+<h4 id="loging">loging</h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 8、导入系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../../2、基础/" class="navigation navigation-next " aria-label="Next page: 2、基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3、标准库","level":"1.2.2.1.2.1.1.1","depth":7,"next":{"title":"2、基础","level":"1.2.2.1.2.2","depth":5,"path":"1、计科/2、实现/1、语言/2、Python/2、基础/README.md","ref":"1、计科/2、实现/1、语言/2、Python/2、基础/README.md","articles":[{"title":"1、框架","level":"1.2.2.1.2.2.1","depth":6,"path":"1、计科/2、实现/1、语言/2、Python/2、基础/1、框架/README.md","ref":"1、计科/2、实现/1、语言/2、Python/2、基础/1、框架/README.md","articles":[]}]},"previous":{"title":"8、导入系统","level":"1.2.2.1.2.1.1","depth":6,"path":"1、计科/2、实现/1、语言/2、Python/1、基本/8、导入系统/README.md","ref":"1、计科/2、实现/1、语言/2、Python/1、基本/8、导入系统/README.md","articles":[{"title":"3、标准库","level":"1.2.2.1.2.1.1.1","depth":7,"path":"1、计科/2、实现/1、语言/2、Python/1、基本/8、导入系统/3、标准库/README.md","ref":"1、计科/2、实现/1、语言/2、Python/1、基本/8、导入系统/3、标准库/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","-sharing"],"pluginsConfig":{"expandable-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1、计科/2、实现/1、语言/2、Python/1、基本/8、导入系统/3、标准库/README.md","mtime":"2023-08-06T04:19:55.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-06T04:20:39.691Z"},"basePath":"../../../../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
